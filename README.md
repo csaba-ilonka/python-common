@@ -7,6 +7,12 @@ https://packaging.python.org/tutorials/installing-packages/#installing-from-a-lo
 python setup.py sdist bdist_wheel
 ```
 
+### Install:
 ```shell
-pip install git+https://github.com/csaba-ilonka/python-common.git#egg=MyPythonCommon
+pip install git+https://github.com/csaba-ilonka/python-common.git@master#egg=MyPythonCommon
+```
+
+### Update:
+```shell
+pip install -U git+https://github.com/csaba-ilonka/python-common.git@master#egg=MyPythonCommon
 ```
