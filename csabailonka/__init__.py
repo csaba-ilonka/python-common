@@ -1,1 +1,1 @@
-import common
+import csabailonka.common
