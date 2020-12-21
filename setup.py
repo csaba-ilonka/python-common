@@ -32,7 +32,7 @@ def release():
 with open("README.md", "r", encoding="UTF-8") as fh:
     long_description = fh.read()
 
-preRelease()
+# preRelease()
 setuptools.setup(
     name=PACKAGE,
     version=VERSION,
@@ -49,5 +49,5 @@ setuptools.setup(
     ],
     python_requires='>=3.8'
 )
-release()
-clear()
+# release()
+# clear()
