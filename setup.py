@@ -1,6 +1,6 @@
 import setuptools
 
-VERSION = '0.0.1'
+from csabailonka.common import VERSION
 
 with open("README.md", "r", encoding="UTF-8") as fh:
     long_description = fh.read()
