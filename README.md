@@ -13,10 +13,10 @@ python setup.py sdist bdist_wheel
 ### Install:
 ```shell
 python -m pip install --upgrade pip setuptools wheel
-pip install git+https://github.com/csaba-ilonka/python-common.git@master#egg=MyPythonCommon
+pip install git+https://github.com/csaba-ilonka/python-common.git@master
 ```
 
 ### Update:
 ```shell
-pip install -U git+https://github.com/csaba-ilonka/python-common.git@master#egg=MyPythonCommon
+pip install -U git+https://github.com/csaba-ilonka/python-common.git@master
 ```
