@@ -19,9 +19,10 @@ def for_logging(filename: str = 'logs/app.log',
     :param stdout: Flag to enable or disable logging to stdout
     """
     os.makedirs(os.path.dirname(filename), exist_ok=True)
-    handlers = [logging.FileHandler(filename), logging.StreamHandler()] if stdout else [logging.FileHandler(filename)]
+    fileHandler = logging.FileHandler(filename, mode=filemode, encoding='UTF-8')
+    handlers = [fileHandler, logging.StreamHandler()] if stdout else [fileHandler]
     # noinspection PyArgumentList
-    logging.basicConfig(level=level, format=log_format, handlers=handlers, filemode=filemode)
+    logging.basicConfig(handlers=handlers, format=log_format, level=level)
 
 def for_properties(path: Path = Path('config.json')):
     """
